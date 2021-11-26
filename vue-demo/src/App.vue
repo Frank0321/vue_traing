@@ -1,9 +1,17 @@
 <template>
-  <div id="app">
-    <button class="btn btn btn-primary" >按鈕</button>
+  <div id="app" class="container p-5">
+
+    <demo-ref></demo-ref>
   </div>
 </template>
+<script>
+import demoRef from './components/ref-parent-children/demo';
+export default {
+  name: 'app',
+  components: {
+    demoRef
+  }
+}
 
-<style lang="scss">
-
-</style>
+</script>
+<style lang="scss"></style>

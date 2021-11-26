@@ -20,3 +20,31 @@
 
 - 樣式可以參考官網上的 components [components](https://getbootstrap.com/docs/5.1/components/accordion/)
      
+## $refs、$parent、$children 實戰解析
+### bug 處理
+- This dependency was not found: (引用的路徑錯了)
+> './components/ref-parent-children/demo' 應該為這樣
+
+- Module build failed: Error: ENOENT:
+> 把 node_modules 砍了，然後 npm install 重新裝一次
+
+- 頁面渲染完成
+> mounted()
+
+### $refs
+- 在 html 如 class 一樣，標上 ref="abc"，即可對這個 ref 進行操作
+1. 獲取 ref 標籤資訊
+   ```html
+   //獲取 input
+   console.log(this.$refs.inputref);
+   ```
+2. 修改該 ref 的樣式 (已修改外框為例)
+   ```html
+    //修改樣式
+    this.$refs.inputref.style.borderColor = "red";
+   ```
+3. 獲取焦點 (開啟頁面時，游標自動閃爍，表示可以直接輸入的意思)
+   ```html
+    //獲取焦點
+    this.$refs.inputref.focus();
+   ```
