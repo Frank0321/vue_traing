@@ -30,8 +30,12 @@
 ### 備註 
 - App.vue 的 <router-view /> 不可以刪除，否則無法用 router 開啟其他畫面
      
+
+
 ## LessonTwo
 - $refs、$parent、$children 實戰解析
+- 參考程式
+> ref-parent-children/demo
 ### bug 處理
 - This dependency was not found: (引用的路徑錯了)
 > './components/ref-parent-children/demo' 應該為這樣

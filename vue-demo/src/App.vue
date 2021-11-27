@@ -1,16 +1,15 @@
 <template>
-  <div id="app" class="container p-5">
+  <div id="app">
 
-<!--    <demo-ref></demo-ref>-->
     <router-view />
   </div>
 </template>
 <script>
-// import demoRef from './components/ref-parent-children/demo';
+
 export default {
   name: 'app',
   components: {
-    // demoRef
+
   }
 }
 

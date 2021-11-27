@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import lessonTwo from "../views/LessonTwo";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/lessonOne",
     name: "lessonOne",
     component: () => import("../views/LessonOne"),
+  },
+  {
+    path: "/lessonTwo",
+    name: "lessonTwo",
+    component: lessonTwo,
   }
 ];
 
