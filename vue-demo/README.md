@@ -71,4 +71,42 @@
 - ref-parent-children/children-vue
 - views/LessonTwo.vue (呈現)
 
+1. 父元件使聚焦在子原件上
+   - 子元件
+   1. 該物件使用 ref 參數命名
+   2. 子元件先定義聚焦的原件方法 : 
+      ```html
+      methods: {
+         focus() {
+         this.$refs["child-input"].focus();
+      }
+      ```
+   - 父元件
+   1. 父元件使用子元件，並定義 ref
+   2. 父元件在 mounted 的時候，調用此方法
+      ```html
+      mounted() {
+         console.log("父元件操作子元件")
+         this.$refs["chid-item"].focus();
+      }
+      ```
+2. 父元件透過方法修改子元件
+   - 直接指定到子元件的元素
+      ```html
+      this.$refs["chid-item"].renameHeader('父子組件修改');
+      this.$refs["chid-item"].val = '我被父元件修改了';
+      ```
 
+### $children 
+- 可以直接拿到子元件，不需要 ref 定義
+- 取到的為 array 再去指定要取第幾個
+
+### $parents
+- 參考程式 : child-controller
+- 子元件以 input 為例，輸入時才會觸發 changeInput，而列印 e 時，才可以發現 target 裡面的 value 為輸入的文字
+- 在子組件的 changInput 輸入 this.$parent.header 即可改變父祖件的資料
+
+### 備註
+- ref 的命名
+  - 如果只有一個字(name)，再呼叫時 $refs.name
+  - 如果有'-'隔開(child-name)，再呼叫時 $refs["child-name"] 
