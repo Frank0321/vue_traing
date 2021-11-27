@@ -1,6 +1,13 @@
 # vue-demo
 
-## 第二節 快速部屬 vuecli
+## LessonOne
+- 第二節 快速部屬 vuecli
+- 參考程式 
+> - views/lessonOne
+> - public/bootstrap.min.css
+> - public/index.html
+> - App.vue
+  
 ### 修改 eslint
 1. cmd 移動道專案目錄，然後 輸入 vue ui
 2. 匯入 -> 此專案目錄的位置 -> 匯入這個資料夾 => 自動移到專案控制台
@@ -19,8 +26,12 @@
 5. button class 的名稱命名為 : btn btn-primary
 
 - 樣式可以參考官網上的 components [components](https://getbootstrap.com/docs/5.1/components/accordion/)
+
+### 備註 
+- App.vue 的 <router-view /> 不可以刪除，否則無法用 router 開啟其他畫面
      
-## $refs、$parent、$children 實戰解析
+## LessonTwo
+- $refs、$parent、$children 實戰解析
 ### bug 處理
 - This dependency was not found: (引用的路徑錯了)
 > './components/ref-parent-children/demo' 應該為這樣
