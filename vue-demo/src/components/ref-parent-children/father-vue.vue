@@ -37,6 +37,11 @@ export default {
     console.log(this.$children);
 
     this.$children[3].renameHeader("修改第三個標頭");
+  },
+  methods: {
+    parentRename(data){
+      this.header = data;
+    }
   }
 }
 </script>

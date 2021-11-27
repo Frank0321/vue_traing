@@ -21,7 +21,8 @@ export default {
     changeInput(e){
       console.log(e);
       console.log(e.target.value);
-      this.$parent.header = e.target.value;
+      // this.$parent.header = e.target.value;
+      this.$parent.parentRename(e.target.value);
     }
   }
 }
