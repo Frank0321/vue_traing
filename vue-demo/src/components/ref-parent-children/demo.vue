@@ -3,12 +3,11 @@
     獲取普通元件
     <input type="text" class="form-control" ref="inputref">
     獲取列表
-    <ui class="list-group">
+    <ul class="list-group">
       <li class="list-group-item" v-for="(item, index) in list" :key="index" ref="list">
         {{item}}
       </li>
-    </ui>
-    獲取組件
+    </ul>
 
   </div>
 </template>
@@ -22,12 +21,11 @@ export default {
   },
   mounted() {
     //獲取 input
-    console.log(this.$refs.inputref);
+    // console.log(this.$refs.inputref);
     //修改樣式
     this.$refs.inputref.style.borderColor = "red";
     //獲取焦點
     this.$refs.inputref.focus();
-
 
     //////////////////////
     //獲取列表

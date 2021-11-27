@@ -47,6 +47,7 @@
 > mounted()
 
 ### $refs
+- 參考 ref-parent-children/demo
 - 在 html 如 class 一樣，標上 ref="abc"，即可對這個 ref 進行操作
 1. 獲取 ref 標籤資訊
    ```html
@@ -63,3 +64,11 @@
     //獲取焦點
     this.$refs.inputref.focus();
    ```
+   
+### $ref 父操作子元件
+- 參考程式
+- ref-parent-children/father-vue
+- ref-parent-children/children-vue
+- views/LessonTwo.vue (呈現)
+
+
