@@ -62,3 +62,27 @@ new Vue({
 - class : 結果的分類
   - 一個樣式 : 返回字串符 (三元表達式和 key 和樣式的清單對象)
   - 多個樣式 : 返回對象 (樣式做 key，true 或 false 做值) 
+    
+## methods_on
+### methods
+- 聲明函數，屬於組件對象的
+- 包含多個函數名作 key，函數體做 value
+- 在 script 中能使用的對象，基本上 template 中也可以使用
+- 但在 script 中則需要加 this 呼叫，在 template 則不需要加 this
+
+### 本章重點
+- 綁定事件的方法
+  - v-on:事件名 ="表達式||函數名"
+  - 簡寫 : @事件名="表達式||函數名"
+- 函數名如果沒有參數，可以省略()，只給一個函數名稱
+- 聲明組件內涵數，在 export default 這個對象的根屬性加上 methods 屬性，其是一個對象
+  - key 是函數名，值是函數本體
+- 在 export default 這個對象的根屬性上 data 屬性，其是一個函數，返回一個對象
+  - 對象的屬性是我們初始化的變量的名稱
+    
+### v-bind、v-on
+- v-bind 可以用 : 縮寫，如
+  - v-bind:class => :class
+
+- v-on 可以用 @ 縮寫，如
+  - v-on:click => @click
