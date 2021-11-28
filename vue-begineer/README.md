@@ -48,3 +48,17 @@ new Vue({
     ```
 - 參考 : [when using the Vue CLI](https://stackoverflow.com/questions/47219819/how-to-change-port-number-in-vue-cli-project) 為關鍵字
  
+
+## class 結合 v-bind 使用
+- 需要根據可變的表達式結果來給 class 值，就需要用到 v-bind:class="xxx"
+
+### v-bind:class= ()? a : b
+- 一個 class 對應一個判斷 : 如果 class 要依照參數來判斷 class 的名稱，前面需要加上 v-bind
+- 一個 class 對應多個判斷 : 用物件呈現
+- 在 list 中 class 對應不同值 : 利用 v-for 跑迴圈，class="{判定的標準}[forloop 內要判斷的參數]" 
+---
+- v-bind : 屬性名="表達式"，最終表達式運結束的結果賦予該屬性名
+  - 簡化  ` : 屬性名="表達式"`
+- class : 結果的分類
+  - 一個樣式 : 返回字串符 (三元表達式和 key 和樣式的清單對象)
+  - 多個樣式 : 返回對象 (樣式做 key，true 或 false 做值) 
