@@ -37,6 +37,14 @@ new Vue({
 - 單向改變
 - v-bind 的值會受外部影響，但改變他的值，不會改變到外部值
 
-### v-model
-
+## 服務器
+### 修改 port 
+1. package.json 中，在 "serve": "vue-cli-service serve" 後面加上 --port 3000
+    ```json
+      "scripts": {
+        "serve": "vue-cli-service serve --port 3000",
+        "build": "vue-cli-service build"
+      },
+    ```
+- 參考 : [when using the Vue CLI](https://stackoverflow.com/questions/47219819/how-to-change-port-number-in-vue-cli-project) 為關鍵字
  
