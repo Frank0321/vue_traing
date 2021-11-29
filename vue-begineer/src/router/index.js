@@ -33,6 +33,11 @@ const routes = [
     path: '/lesson5',
     name: 'lesson5',
     component: ()=> import('../views/Lesson5')
+  },
+  {
+    path: '/lesson6',
+    name: '/lesson6',
+    component: ()=> import('../views/Lesson6')
   }
 ]
 
