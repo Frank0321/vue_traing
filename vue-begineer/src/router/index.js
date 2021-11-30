@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Lesson2 from "../views/Lesson2";
 import Lesson7 from "../views/Lesson7";
 import Lesson8 from "../views/Lesson8";
-
+import lesson9 from "../views/lesson9";
 Vue.use(VueRouter)
 
 const routes = [
@@ -50,7 +50,11 @@ const routes = [
     path: '/lesson8',
     name: '/lesson8',
     component: Lesson8
-
+  },
+  {
+    path: '/lesson9',
+    name: '/lesson9',
+    component: lesson9
   }
 ]
 

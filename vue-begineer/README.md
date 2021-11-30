@@ -104,4 +104,16 @@ new Vue({
 <style scoped>
 </style>
 ```
- 
+- 父和子，使用的是父，被使用的是子
+- 父需要聲明子組件，引用子組件對象，聲明方式如下 :
+  ```javascript
+  import 子組件對象 form '../xxx';
+  {
+      components: {
+          組件名: 子組件對象
+      }
+  }
+  ```
+## 全局組件  
+- 全局組件，使用更為方便，不需要引入和聲明，直接用
+- 用 main.js 中引入一次，在 main.js 中使用  `vue.component('組件名', 組件對象)`
