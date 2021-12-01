@@ -1,12 +1,15 @@
 <template>
   <div>
-    我是body
+    我是body，{{textTwo}}
   </div>
 </template>
 
 <script>
 export default {
-  name: "body"
+  name: "body",
+  props: [
+      'textTwo'
+  ]
 }
 </script>
 

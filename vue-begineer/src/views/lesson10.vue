@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header-vue></header-vue>
-    <body-vue></body-vue>
+    <header-vue textOne="大"></header-vue>
+    <body-vue v-bind:textTwo="text2"></body-vue>
     <footVue></footVue>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   name: "lesson10",
   data() {
     return {
-
+      text2: '呵呵呵呵'
     }
   },
   components: {
