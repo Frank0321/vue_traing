@@ -127,3 +127,12 @@ new Vue({
   - 根屬性 props: ['prop1', 'prop2']
   - 在頁面中直接使用{{prop1}}
   - 在 js 中，使用 this.prop1 獲取
+  
+## 看文黨的對象分類
+- 全局的代表 vue. 的
+- 實例的代表 this. 或者 new Vue().
+- 選項代表 new Vue() 的參數，或者 export default 理邊的屬性
+
+## 子向父組件通訊
+- 通過 new Vue() 這樣的一個對象，來 $on('事件名', fu(prop1, prop2))
+- 另一個組件引入同一個通訊，來 $emit('事件名', prop1, prop2)
