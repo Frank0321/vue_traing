@@ -136,3 +136,21 @@ new Vue({
 ## 子向父組件通訊
 - 通過 new Vue() 這樣的一個對象，來 $on('事件名', fu(prop1, prop2))
 - 另一個組件引入同一個通訊，來 $emit('事件名', prop1, prop2)
+
+## 複習 
+- vue 單文件方式 xxx.vue
+- 編寫流程為 : 
+1. 準備好配置文件
+  > - package.json(包描述文件 && 封裝命令 npm rum dev)
+  > - webpack.config.js 文件 (打包的配置文件)
+2. 創建 index.html (單頁應用的頁面)
+3. 創建 main.js (入口文件)
+4. 引入 vue 和相關的文件 xxx.vue
+5. new Vue (option)
+6. options (選項)
+   > - data
+   > - methods
+   > - components
+   > - props
+7.    
+
