@@ -152,5 +152,20 @@ new Vue({
    > - methods
    > - components
    > - props
-7.    
-
+7. 實例 :
+- 在組件內 (xxx.vue) 中的 this
+- new Vue ()
+- 事件
+  > - this.$on(事件名，回調函數(參數))
+  > - this.$emit(事件名，數據)
+  > - this.$once(事件名，回調函數(參數))就觸發一次
+  > - this.$off(事件名)，取消事件
+8. 全局
+- Vue.component('組件名', 組件對象) 在哪裡都可以使用
+9. 組件傳值
+- 父傳子 : 屬性最為參數
+  > - 常量 : title="xxx"  子組件聲明接收參數 props : ['xxx'] 
+  > - 變量 : :title="num" 子組件聲明接收參數 props : ['xxx']
+- 子傳父 : vuebus (只能是同一輛車)
+  > - 先停車到父組件，on 一下
+  > - 再開車到子組件，如果需要的話，emit一下，觸發上述時間的回調函數
