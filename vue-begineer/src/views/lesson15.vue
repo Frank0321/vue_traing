@@ -33,6 +33,7 @@ export default {
     this.text = '呵呵';
 
     console.log('sub :', this.$refs.sub.$el);
+    this.$refs.sub.$el.innerHTML = '我是子組件之王';
   }
 }
 </script>
