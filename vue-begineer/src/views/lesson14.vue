@@ -3,14 +3,17 @@
     請輸入內容
     <input type="text" name="ABC" v-model="text">
     顯示: {{text | myFilter}}
+    <sub-filter/>
   </div>
 </template>
 
 <script>
+import subfilter from "../components/subfilter";
+
 export default {
   name: "lesson14",
   filters:{
-    myFilter1: function (value) {
+    myFilter: function (value) {
       // value 就是 text
       // 將輸入的內容反轉過來
       return value.split('').reverse().join('');
@@ -22,6 +25,9 @@ export default {
       text: '',
       arr: []
     }
+  },
+  components: {
+    subFilter: subfilter
   }
 }
 </script>
