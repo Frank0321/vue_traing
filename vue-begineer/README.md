@@ -187,3 +187,12 @@ new Vue({
   - 對應的事件
   > - created 完成了數據的初始化，此時還未生成 DOM，無法操作 DOM
   > - mounted 將數據已經裝載到 DOM 之上，可以操作 DOM
+ 
+##  mint-ui
+- element-ui 在 PC 端使用的
+- 移動端版本 mint-ui
+- [參考](https://mint-ui.github.io/#!/zh-cn)
+- 引用別人寫好的套件
+
+## wappalyzer
+- 獲取到當前網站所使用到的技術
