@@ -70,6 +70,11 @@ const routes = [
     path: '/lesson15',
     name: '/lesson15',
     component: () => import('../views/lesson15')
+  },
+  {
+    path: '/lesson18',
+    name: '/lesson18',
+    component: () => import('../views/lesson18')
   }
 ]
 
