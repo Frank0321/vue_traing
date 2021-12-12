@@ -75,6 +75,21 @@ const routes = [
     path: '/lesson18',
     name: '/lesson18',
     component: () => import('../views/lesson18')
+  },
+  {
+    path: '/lesson21',
+    name: '/lesson21',
+    component: () => import('../views/lesson21')
+  },
+  {
+    path: '/movie',
+    name: '/movieUrl',
+    component: () => import('../components/movie')
+  },
+  {
+    path: '/music',
+    name: 'musicUrl',
+    component: () => import('../components/music')
   }
 ]
 
