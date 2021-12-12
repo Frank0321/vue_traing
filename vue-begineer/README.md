@@ -217,3 +217,12 @@ new Vue({
 - 為了讓畫面跟隨著網址，渲染畫面
 - (放圖片)
 
+## router 命名
+- 需求 : 通過 <a></a> 標籤點擊，做頁面數據的跳轉
+- 使用 router-link 標籤
+  ```javascript
+  <router-link :to="{name: 'musicUrl'}">進入音樂1</router-link>
+  <router-link to="/music">進入音樂2</router-link>
+  <router-link :to=" '/music' ">進入音樂3</router-link>
+  ```
+
