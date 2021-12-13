@@ -90,6 +90,11 @@ const routes = [
     path: '/music',
     name: 'musicUrl',
     component: () => import('../components/music')
+  },
+  {
+    path: '/lesson22',
+    name: '/lesson22',
+    component: () => import('../views/lesson22')
   }
 ]
 

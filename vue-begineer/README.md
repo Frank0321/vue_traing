@@ -226,3 +226,6 @@ new Vue({
   <router-link :to=" '/music' ">進入音樂3</router-link>
   ```
 
+## 參數 router-link
+- 在 vue-router 中，有兩大對象被掛載到實例 this
+- $route (只讀、具備信息的對象)、$router(具備功能函數)
