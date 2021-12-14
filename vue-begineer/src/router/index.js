@@ -95,6 +95,16 @@ const routes = [
     path: '/lesson22',
     name: '/lesson22',
     component: () => import('../views/lesson22')
+  },
+  {
+    path: '/detail',
+    name: 'detail-query',
+    component: () => import('../components/detail')
+  },
+  {
+    path: '/detail/:id',
+    name: 'detail-params',
+    component: () => import('../components/detail')
   }
 ]
 

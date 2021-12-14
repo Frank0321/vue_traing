@@ -229,3 +229,15 @@ new Vue({
 ## 參數 router-link
 - 在 vue-router 中，有兩大對象被掛載到實例 this
 - $route (只讀、具備信息的對象)、$router(具備功能函數)
+- "/detail" 底下任意內容都可以匹配 如 : /detail?id=1 等
+- vue-router 中掛載兩個對象的屬性
+  - $route (信息數據)
+  - $router (功能函數)
+- 查詢字符串 ../detail?id=1
+  - 去哪裡 `<router-link :to="{name:'detail-query', query:{id:index}}"> 查看</router-link>`
+  - router 設定 `{path: '/detail', name: 'detail-query', component: () => import('../components/detail')}`
+  - 讀取方式 `console.log(this.$route.query)`
+- path方式  ../detail/1
+  - 去哪裡 `<router-link :to="{name:'detail-params', params:{id:index}}"> 查看</router-link>`
+  - router 設定 `{path: '/detail/:id', name: 'detail-params', component: () => import('../components/detail')}`
+  - 讀取方式 `console.log(this.$route.params)`
