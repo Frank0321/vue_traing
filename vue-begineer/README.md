@@ -241,3 +241,11 @@ new Vue({
   - 去哪裡 `<router-link :to="{name:'detail-params', params:{id:index}}"> 查看</router-link>`
   - router 設定 `{path: '/detail/:id', name: 'detail-params', component: () => import('../components/detail')}`
   - 讀取方式 `console.log(this.$route.params)`
+  
+## 編程導航
+- 不能保證用戶一定會點擊某些按鈕
+- 並且當前操作，除了路由跳轉以外，還有一些別的附加動作
+- this.$router.go 根據瀏覽器紀錄，前進、後退
+- this.$router.push (直接跳轉到某個頁面顯示)
+  - push 參數 : 字符串 /xxx
+  - 對象 : `{name: 'xxx'}`
